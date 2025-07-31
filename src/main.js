@@ -2,8 +2,6 @@ import "./style.css";
 import "mapbox-gl/dist/mapbox-gl.css";
 import mapboxgl from "mapbox-gl";
 
-// DOM Elements
-
 //Join Users Button
 const joinBtn=document.getElementById("join-btn")
 //Form Modal

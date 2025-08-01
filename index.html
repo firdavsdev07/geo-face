@@ -10,7 +10,7 @@
   <body>
     <nav class="sidebar">
       <div class="sidebar-top">
-        <a href="#" class="sidebar-link active" id="join-btn">
+        <a href="#" class="sidebar-link active" id="profile">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -44,7 +44,7 @@
             <circle cx="12" cy="10" r="3"></circle>
           </svg>
         </a>
-        <a href="#" class="sidebar-link">
+        <a href="#" class="sidebar-link" id="user-list">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -128,10 +128,20 @@
         </a>
       </div>
     </nav>
+
+    <div class="user-list" id="user-list-panel">
+      <div class="user-list-header">
+        <h2>Users</h2>
+      </div>
+      <div class="user-list-items">
+        <!-- <div class="user-item">
+
+        </div> -->
+      </div>
+    </div>
+
     <div id="map">
-
       <div class="info-location">
-
         <div class="info-popup">
           <h1>Your Coords</h1>
           <span class="info-location__close-icon">
@@ -143,7 +153,6 @@
           <li id="info-location__latitude"></li>
         </ul>
       </div>
-
     </div>
 
     <div id="join-modal" class="modal-overlay">
@@ -163,12 +172,12 @@
                 <path d="m16 16-4-4-4 4"/>
               </svg>
             </label>
-            <input type="file" id="avatar" name="avatar" accept="image/*" class="file-upload-input">
+            <input type="file" id="avatar" name="avatar" class="file-upload-input">
             <span id="file-name" class="file-name"></span>
           </div>
           <div class="form-actions">
             <button type="button" class="btn btn-secondary" id="cancel-join">Cancel</button>
-            <button type="submit" class="btn btn-primary">Join</button>
+            <button  class="btn btn-primary" id="join-user">Join</button>
           </div>
         </form>
       </div>
